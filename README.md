@@ -1,5 +1,5 @@
 # Template Docker MariaDB
-Ce projet est un template Docker simple pour déployer une base de données MariaDB avec une configuration de démarrage rapide, permettant une gestion aisée de vos bases de données dans des environnements Docker. Il est conçu pour être un modèle réutilisable pour différents projets nécessitant une instance MariaDB avec initialisation via un script SQL.
+Ce projet est un **template Docker** simple pour déployer une base de données **MariaD**B avec une configuration de démarrage rapide, permettant une gestion aisée de vos bases de données dans des environnements Docker. Il est conçu pour être un modèle réutilisable pour différents projets nécessitant une instance MariaDB avec initialisation via un script SQL.
 
 ## Structure du projet
 
@@ -10,7 +10,6 @@ Ce projet est un template Docker simple pour déployer une base de données Mari
 └── mariadb/                  # Dossier contenant les configurations de MariaDB
     └── init.sql              # Script SQL pour initialiser la base de données
 ```
-
 ---
 
 ## 1. Prérequis
