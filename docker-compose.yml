@@ -1,0 +1,23 @@
+services:
+  mariadb:
+    image: mariadb:latest
+    container_name: mariadb_container
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: tp-docker_db
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+    volumes:
+      - ./mariadb:/docker-entrypoint-initdb.d # Monter le dossier contenant `init.sql`
+      - mariadb-data:/var/lib/mysql # Persistance des données
+    ports:
+      - "3306:3306"
+    networks:
+      - dbnet
+
+networks:
+  dbnet:
+    driver: bridge
+
+volumes:
+  mariadb-data:
